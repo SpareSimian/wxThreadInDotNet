@@ -1,16 +1,16 @@
 #include "pch.h"
-//#include "wx/thread.h"
+#include "wx/thread.h"
 
-class NativeThread // : public wxThread
+class NativeThread : public wxThread
 {
  public:
      NativeThread()
      {
-#if 0
          Create();
          Run();
-#endif
      }
+ private:
+     virtual void* Entry() { return nullptr; }
 };
 
 namespace WxWidgetsWrapper
