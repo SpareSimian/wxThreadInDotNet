@@ -1,10 +1,13 @@
 #include "pch.h"
 #include "wx/thread.h"
 
+// note that NativeThread deletes itself so no need to hold its pointer
+// somewhere
+
 class NativeThread : public wxThread
 {
  public:
-     NativeThread()
+     NativeThread() : wxThread(wxTHREAD_DETACHED)
      {
          Create();
          Run();
@@ -18,13 +21,8 @@ namespace WxWidgetsWrapper
 
     public ref class Thread
     {
-        NativeThread* nativeThread;
      public:
-         Thread() : nativeThread(new NativeThread())
-         {
-         }
-         ~Thread() { this->!Thread(); }
-         Thread::!Thread() { delete nativeThread; nativeThread = nullptr; }
+         Thread() { new NativeThread(); }
     };
 
 }

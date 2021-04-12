@@ -21,10 +21,13 @@ namespace wxThreadExitCrash
     /// </summary>
     public partial class MainWindow : Window
     {
+        WxWidgetsWrapper.Initializer i = new WxWidgetsWrapper.Initializer();
+        
         public MainWindow()
         {
             InitializeComponent();
         }
+        
         private void ButtonTest_Click(object sender, RoutedEventArgs e)
         {
             WxWidgetsWrapper.Thread t = new WxWidgetsWrapper.Thread();
