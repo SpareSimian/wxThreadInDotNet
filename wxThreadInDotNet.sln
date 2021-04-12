@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wxThreadExitCrash", "wxThreadExitCrash\wxThreadExitCrash.csproj", "{2ABBF550-6DDD-421E-B365-D1B397302204}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "wxThreadInDotNet", "wxThreadInDotNet\wxThreadInDotNet.csproj", "{2ABBF550-6DDD-421E-B365-D1B397302204}"
 	ProjectSection(ProjectDependencies) = postProject
 		{326BD2E2-981A-4994-BD05-BA22F1A73B0D} = {326BD2E2-981A-4994-BD05-BA22F1A73B0D}
 	EndProjectSection

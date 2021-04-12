@@ -14,7 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Threading;
 
-namespace wxThreadExitCrash
+namespace wxThreadInDotNet
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
