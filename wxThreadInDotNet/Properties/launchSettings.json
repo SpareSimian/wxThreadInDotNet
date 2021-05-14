@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "wxThreadInDotNet": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}
